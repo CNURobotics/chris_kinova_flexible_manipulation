@@ -1,0 +1,19 @@
+<package format="2">
+  <name>chris_kinova_flexible_manipulation</name>
+  <version>0.0.0</version>
+  <description>
+     Behaviors related to demonstration of flexible_manipulation system using CHRISLab Kinova Mico arm setup
+  </description>
+  <maintainer email="robotics@cnu.edu">David Conner</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>rospy</depend>
+  <depend>flexible_manipulation_flexbe_states</depend>
+
+  <export>
+    <flexbe_behaviors />
+  </export>
+
+</package>

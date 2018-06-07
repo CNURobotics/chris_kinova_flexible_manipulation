@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<behavior name="test_flexible_manipulation">
+
+	<executable package_path="chris_kinova_flexible_manipulation.test_flexible_manipulation_sm" class="test_flexible_manipulationSM" />
+	<tagstring>flexible_manipulation</tagstring>
+	<author>David Conner</author>
+	<date>Wed May 2 2018</date>
+	<description>
+		testing behavior
+	</description>
+
+
+	<!-- Contained Behaviors -->
+
+	<!-- Available Parameters -->
+
+</behavior>

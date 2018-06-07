@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <arg name="robot_namespace" default="$(optenv KINOVA_ARM j2s7s300)"/>
+
+  <group ns="$(arg robot_namespace)">
+    <include file="$(find flexbe_app)/launch/flexbe_ocs.launch"/>
+  </group>
+
+</launch>

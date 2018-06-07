@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<behavior name="test_moveit_proxy_gripper">
+
+	<executable package_path="chris_kinova_flexible_manipulation.test_moveit_proxy_gripper_sm" class="test_moveit_proxy_gripperSM" />
+	<tagstring>flexible_manipulation</tagstring>
+	<author>David Conner</author>
+	<date>Tue Feb 06 2018</date>
+	<description>
+		testing behavior that uses different move groups for controling the arm and gripper
+	</description>
+
+
+	<!-- Contained Behaviors -->
+
+	<!-- Available Parameters -->
+
+</behavior>
