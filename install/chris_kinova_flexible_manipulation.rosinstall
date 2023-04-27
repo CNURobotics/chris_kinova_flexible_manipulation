@@ -21,4 +21,4 @@
 - git: {
     local-name: src/kinova-ros,
     uri: 'https://github.com/CNURobotics/kinova-ros.git',
-    version: feature/melodic-m1n2s600 }
+    version: feature/melodic-m1n6s200 }
