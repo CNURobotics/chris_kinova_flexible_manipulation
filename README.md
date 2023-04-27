@@ -1,5 +1,4 @@
 # CHRISLab Flexible Manipulation Demo using Kinova Robot Arm
-===================
 
 This package contains at collection of demonstration behaviors for the Kinova Mico
 robot arm using the CHRISLab [Flexible Manipulation] system, which is a collection
@@ -11,36 +10,39 @@ of [FlexBE] compatible state implementations that interface with ROS [MoveIt!] c
 The Flexible Manipulation system has been tested using the latest version of ROS Kinetic. You
 should first follow the [ROS Install Guide] and get that set up before proceeding.
 
-To use this demonstration, we assume that a catkin workspace is created, and the ```$WORKSPACE_ROOT``` environment variable is defined.  
+To use this demonstration, we assume that a catkin workspace is created, and the `$WORKSPACE_ROOT` environment variable is defined. This is the directory containing the `.rosinstall` file.
 On a new system, this can be accomplished by following the first six steps of the initial installation directions at [CHRISLab Install].
 
-Change to the ```$WORKSPACE_ROOT/src``` folder (e.g. with ```roscd``` if the workspace is set up correctly), clone this repository, and then run
+Change to the `$WORKSPACE_ROOT/src` folder (e.g. with `roscd` if the workspace is set up correctly), clone this repository, and then run
 <pre>
 chris_kinova_flexible_manipulation/install/install_chris_kinova_flexible_manipulation.sh
 </pre>
 This script can be applied to an existing workspace if desired.
 
 This will clone all of the necessary packages for our demonstration.
-After the script completes, do a ```catkin build``` and re-source the environment setup before running the programs.
+After the script completes, do a `catkin build` and re-source the environment setup before running the programs.
+
+### Extra Packages Needed
+
+Kinova ROS requires some [additional packages](https://github.com/Kinovarobotics/kinova-ros/tree/melodic-devel/kinova_moveit#installation) for MoveIt!.
 
 ## Usage
 -------
 
 ### Simulation
 
-* Kinova simulation
+* Kinova simulation with sensors
 
 <pre>
 roscore
 roslaunch gazebo_ros empty_world.launch
-roslaunch chris_kinova_bringup chris_kinova_robot_gazebo.launch
-roslaunch chris_kinova_bringup chris_kinova_trajectory_controllers.launch
-roslaunch chris_kinova_bringup chris_moveit_demo.launch
+roslaunch chris_kinova_bringup chris_kinova_lab_gazebo.launch
+roslaunch chris_kinova_bringup chris_kinova_moveit_gazebo_demo.launch
 roslaunch chris_kinova_flexible_manipulation chris_kinova_behavior_testing.launch
 </pre>
 
 
-For a hardware based demonstration, see the ```chris_kinova_bringup``` README, and add the
+For a hardware based demonstration, see the `chris_kinova_bringup` README, and add the
 <pre>
 roslaunch chris_kinova_flexible_manipulation chris_kinova_behavior_testing.launch
 </pre>

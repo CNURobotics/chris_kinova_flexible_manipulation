@@ -58,7 +58,7 @@ class test_flexible_manipulation3SM(Behavior):
         # x:1490 y:191, x:764 y:433
         _state_machine = OperatableStateMachine(outcomes=['finished', 'failed'])
         _state_machine.userdata.action_topic = "/move_group"
-        _state_machine.userdata.trajectory_action_topic = "/m1n6s200_driver/arm_controller/follow_joint_trajectory"
+        _state_machine.userdata.trajectory_action_topic = "/m1n6s200/effort_joint_trajectory_controller/follow_joint_trajectory"
         _state_machine.userdata.config_vertical = "Vertical"
         _state_machine.userdata.config_home = "Home"
         _state_machine.userdata.config_retract = "Retract"

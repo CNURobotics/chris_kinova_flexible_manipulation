@@ -54,8 +54,8 @@ class test_moveit_proxy_gripperSM(Behavior):
         # x:273 y:335, x:947 y:170
         _state_machine = OperatableStateMachine(outcomes=['finished', 'failed'])
         _state_machine.userdata.action_topic = "/move_group"
-        _state_machine.userdata.trajectory_action_topic = "/m1n6s200_driver/arm_controller/follow_joint_trajectory"
-        _state_machine.userdata.gripper_action_topic = "/m1n6s200_driver/gripper_controller/follow_joint_trajectory"
+        _state_machine.userdata.trajectory_action_topic = "/m1n6s200/effort_joint_trajectory_controller/follow_joint_trajectory"
+        _state_machine.userdata.gripper_action_topic = "/m1n6s200/effort_finger_trajectory_controller/follow_joint_trajectory"
         _state_machine.userdata.move_group_arm = "arm"
         _state_machine.userdata.move_group_gripper = "gripper"
         _state_machine.userdata.config_name_vertical = "Vertical"
