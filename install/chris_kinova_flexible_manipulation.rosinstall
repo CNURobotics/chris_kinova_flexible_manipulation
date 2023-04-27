@@ -1,11 +1,11 @@
 - git: {
     local-name: src/chris_kinova_flexible_manipulation,
-    uri: 'https://github.com/jlbabilino/chris_kinova_flexible_manipulation.git',
-    version: kinetic-fixes }
+    uri: 'https://github.com/CNURobotics/chris_kinova_flexible_manipulation.git',
+    version: kinetic-devel }
 - git: {
     local-name: src/chris_kinova_bringup,
-    uri: 'https://github.com/jlbabilino/chris_kinova_bringup.git',
-    version: upstream-conversion }
+    uri: 'https://github.com/CNURobotics/chris_kinova_bringup.git',
+    version: kinetic-devel }
 - git: {
     local-name: src/flexbe_app,
     uri: 'https://github.com/CNURobotics/flexbe_app.git',
@@ -17,8 +17,8 @@
 - git: {
     local-name: src/flexible_manipulation,
     uri: 'https://github.com/CNURobotics/flexible_manipulation.git',
-    version: kinetic_alpha }
+    version: kinetic-devel }
 - git: {
     local-name: src/kinova-ros,
-    uri: 'https://github.com/jlbabilino/kinova-ros.git',
+    uri: 'https://github.com/CNURobotics/kinova-ros.git',
     version: kinetic-devel }
