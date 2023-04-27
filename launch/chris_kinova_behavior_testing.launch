@@ -7,9 +7,7 @@
   <group ns="$(arg robot_namespace)">
     <include file="$(find flexbe_app)/launch/flexbe_ocs.launch"/>
 
-    <include file="$(find flexbe_onboard)/launch/behavior_onboard.launch">
-      <arg name="behaviors_package" value="chris_kinova_flexible_manipulation" />
-    </include>
+    <include file="$(find flexbe_onboard)/launch/behavior_onboard.launch"/>
 
   </group>
 
