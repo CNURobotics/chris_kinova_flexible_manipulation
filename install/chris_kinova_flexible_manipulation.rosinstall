@@ -13,7 +13,7 @@
 - git: {
     local-name: src/flexbe_behavior_engine,
     uri: 'https://github.com/FlexBE/flexbe_behavior_engine.git',
-    version: main }
+    version: develop }
 - git: {
     local-name: src/flexible_manipulation,
     uri: 'https://github.com/CNURobotics/flexible_manipulation.git',

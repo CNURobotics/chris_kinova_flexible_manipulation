@@ -48,11 +48,15 @@ roslaunch chris_kinova_flexible_manipulation chris_kinova_behavior_testing.launc
 </pre>
 The current kinova hardware driver does not properly handle the FollowJointTrajectoryAction, and returns a success result prematurely.
 
+> NOTE: The current code has issues with failing due to start tolerance.
+> Use `rosrun rqt_reconfigure rqt_reconfigure` and
+> set the `/move_group/trajectory_execution/allowed_start_tolerance` to 0
+> to disable the check. Or, set the a reasonable tolerance.
 
 ## License
 -------
 
-Copyright (c) 2018
+Copyright (c) 2018-2023
 Capable Humanitarian Robotics and Intelligent Systems Lab (CHRISLab)
 Christopher Newport University
 
