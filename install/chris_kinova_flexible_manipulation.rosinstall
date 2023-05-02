@@ -1,24 +1,24 @@
 - git: {
     local-name: src/chris_kinova_flexible_manipulation,
     uri: 'https://github.com/CNURobotics/chris_kinova_flexible_manipulation.git',
-    version: devel }
+    version: noetic }
 - git: {
     local-name: src/chris_kinova_bringup,
     uri: 'https://github.com/CNURobotics/chris_kinova_bringup.git',
-    version: devel }
+    version: noetic }
 - git: {
     local-name: src/flexbe_app,
     uri: 'https://github.com/FlexBE/flexbe_app.git',
-    version: develop }
+    version: noetic }
 - git: {
     local-name: src/flexbe_behavior_engine,
     uri: 'https://github.com/FlexBE/flexbe_behavior_engine.git',
-    version: develop }
+    version: noetic }
 - git: {
     local-name: src/flexible_manipulation,
     uri: 'https://github.com/CNURobotics/flexible_manipulation.git',
-    version: devel }
+    version: noetic }
 - git: {
     local-name: src/kinova-ros,
     uri: 'https://github.com/CNURobotics/kinova-ros.git',
-    version: feature/melodic-m1n6s200 }
+    version: feature/noetic-m1n6s200 }
