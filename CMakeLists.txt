@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.0)
 project(chris_kinova_flexible_manipulation)
 
 find_package(catkin REQUIRED)
@@ -18,8 +18,5 @@ catkin_package(
     LIBRARIES ${PROJECT_NAME})
 
 # install executables
-#install(DIRECTORY src     DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
 install(DIRECTORY manifest DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
 install(DIRECTORY launch   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
-install(DIRECTORY config   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
-install(DIRECTORY install  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
