@@ -12,6 +12,9 @@
   <depend>rospy</depend>
   <depend>flexible_manipulation_flexbe_states</depend>
 
+  <exec_depend>flexbe_app</exec_depend>
+  <exec_depend>flexbe_onboard</exec_depend>
+
   <export>
     <flexbe_behaviors />
   </export>
